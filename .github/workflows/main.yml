@@ -29,5 +29,5 @@ jobs:
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
       - name: Pylint checks code
-        uses: pylint src
+        uses: poetry run pylint src
 
